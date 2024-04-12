@@ -9,8 +9,9 @@
 }
 
 .menu-href:hover, .menu-href:active {
-	text-decoration: underline !important;
-	color: blue !important;
+	text-decoration: none !important;
+	background: #e0f2ff;
+	color: rgba(0,0,0,0.9);
 }
 
 .menu-href img {
@@ -147,6 +148,19 @@
 	.global-search-box.z-bandbox > input.z-bandbox-input {
 		width: 300px;
 	}
+}
+
+.global-search-tabpanel .window-name.z-label {
+	padding: 3px; 
+	font-weight: bold; 
+	display: inline-block;
+}
+.global-search-tabpanel .search-result.z-a {
+	padding-left: 3px; 
+	display: inline-block;
+}
+.global-search-tabpanel .highlight {
+  background-color: #FFFF00;
 }
 
 .menu-href [class^="z-icon-"] {
