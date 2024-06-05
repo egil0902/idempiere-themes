@@ -1,54 +1,17 @@
-.z-button {
+<%-- customization of buttons --%>
+.z-button, .z-button-os {
   display: inline-block;
   padding: 4px 20px;
   text-align: center;
   cursor: pointer;
 }
-
-.z-button-hover,
-.z-button-focus,
-.z-button-click,
-.z-button-disabled {
-  color: #333333;
-  background-color: #dde4e6 !important;
+.z-button-os {
+	border-radius: 4px;
 }
-
-.z-button-click {
-  background-color: #cccccc \9;
-}
-
-.z-button-hover,
-.z-button-focus {
-  border-color: transparent !important;
-  color: #333333;
-  text-decoration: none;
-  background-position: 0 -15px;
-  -webkit-transition: background-position 0.1s linear;
-     -moz-transition: background-position 0.1s linear;
-       -o-transition: background-position 0.1s linear;
-          transition: background-position 0.1s linear;
-}
-
-.z-button-focus {
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.z-button-click {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.z-button-disabled {
-  cursor: default;
-  background-image: none;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+.z-button-os:hover {
+    color: #FFFFFF;
+    border-color: transparent;
+    background-color: #7ac8ff;
 }
 
 .z-button.btn-small {
@@ -56,10 +19,6 @@
 }
 .z-button.btn-medium {
 	padding: 2px 10px;
-}
-
-.z-button-disabled {
-	color: black; cursor: default; opacity: .6; -moz-opacity: .6; -khtml-opacity: .6; filter: alpha(opacity=60);
 }
 
 .img-btn img {
@@ -114,33 +73,11 @@
 .btn-cancel.z-button [class^="z-icon-"]:before {
 	color: white;	
 }
-.z-datebox-button {
-	background-color: #0093f9 !important;
-	color: white !important;
-}
 
-.btn-negate.z-button {
-	background: none;
-	border: none;
-	margin: 0px !important;
-	padding: 0px;
-	min-width: 16px;
-	width: 16px;	
-	height: 10px;
-	min-height:10px;
-	font-size: 14px;
-	font-weight: lighter;		
-	position: absolute;
-	top: 5px;
-	right: 25px; 	
+.z-combobox-button, .z-bandbox-button, .z-datebox-button, .z-timebox-button,
+ .z-spinner-button, .z-doublespinner-button {
+	vertical-align: top;
 }
-.btn-negate.z-button:active, .btn-negate.z-button:focus {
-	border: none;
-	box-shadow: none;
+.z-bandbox-button [class*="z-icon-"], .z-combobox-button [class*="z-icon-"] {
+	font-size: 18px;
 }
-.btn-negate.z-button [class^="z-icon-"] {
-	font-size: 14px;
-	padding: 0px;
-	line-height: 14px;
-}
-
