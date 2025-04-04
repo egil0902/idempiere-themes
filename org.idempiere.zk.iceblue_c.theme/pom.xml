@@ -5,7 +5,7 @@
 		<groupId>org.idempiere</groupId>
 		<artifactId>org.idempiere.parent</artifactId>
 		<version>${revision}</version>
-		<relativePath>../../idempiere/org.idempiere.parent/pom.xml</relativePath>
+		<relativePath>../../../../Documents/source/idempiere10/org.idempiere.parent/pom.xml</relativePath>
 	</parent>	
 	<artifactId>org.idempiere.zk.iceblue_c.theme</artifactId>
 	<packaging>eclipse-plugin</packaging>
